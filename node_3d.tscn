@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cejtcifvw2xdg"]
+
+[ext_resource type="Script" path="res://Node3D.gd" id="1_y8l81"]
+[ext_resource type="Script" path="res://Camera3D.gd" id="2_8ccd7"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_y8l81")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.92521, 0.379456, 0, -0.379456, 0.92521, 0, 1.14255, 1.98567)
+current = true
+script = ExtResource("2_8ccd7")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Camera3D"]
+light_size = 1.0
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]

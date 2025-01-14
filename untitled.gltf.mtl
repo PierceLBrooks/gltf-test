@@ -1,0 +1,24 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl DefaultSkin
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.590300 0.440000 0.338000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Eye_brown
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd /var/folders/dn/sf1_nmf56vv65072_352nqdr0000gn/T/gltfimg-62dmyuk9/brown_eye.png
+map_d /var/folders/dn/sf1_nmf56vv65072_352nqdr0000gn/T/gltfimg-62dmyuk9/brown_eye.png
