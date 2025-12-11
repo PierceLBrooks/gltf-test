@@ -784,7 +784,7 @@ vn 0.004492 -0.968730 -0.248078
 vn -0.006237 -0.968913 -0.247325
 vn 0.000000 0.000001 -1.000000
 vn 0.000000 -0.000001 -1.000000
-mtllib Untitled.qbo.mtl
+mtllib qbo.qbo.mtl
 o Proxy
 vw 1 torso_joint_3 0.513528 arm_joint_R_1 0.486472
 vw 2 torso_joint_3 0.473874 arm_joint_R_1 0.428133 neck_joint_1 0.086156 torso_joint_2 0.011838
