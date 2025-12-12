@@ -1,32 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://cejtcifvw2xdg"]
+[gd_scene format=3 uid="uid://cejtcifvw2xdg"]
 
-[ext_resource type="Script" uid="uid://cnycp0yujt35d" path="res://Node3D.gd" id="1_y8l81"]
-[ext_resource type="Script" uid="uid://bx4x5jjghkh80" path="res://Camera3D.gd" id="2_8ccd7"]
-[ext_resource type="PackedScene" uid="uid://ddnsw3au4bo15" path="res://RiggedFigure.gltf" id="3_m8x7j"]
-[ext_resource type="PackedScene" uid="uid://c3xqcrai0sxxu" path="res://untitled.qbo" id="4_mr13d"]
-[ext_resource type="PackedScene" uid="uid://mfjqh0kg1ssp" path="res://Fire/RiggedFigure.qbo" id="5_jka67"]
-[ext_resource type="PackedScene" uid="uid://bo66t6ajkevpd" path="res://qbo.qbo" id="6_i5arm"]
+[ext_resource type="Script" uid="uid://ctolajq72o15s" path="res://Node3D.gd" id="1_y8l81"]
+[ext_resource type="Script" uid="uid://cenv030tfcpif" path="res://Camera3D.gd" id="2_8ccd7"]
+[ext_resource type="PackedScene" uid="uid://dhp2i5hddreuq" path="res://RiggedFigure.tscn" id="3_r3fl7"]
+[ext_resource type="PackedScene" uid="uid://yr427vb3nygh" path="res://qbo.tscn" id="4_jka67"]
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=256903082]
 script = ExtResource("1_y8l81")
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1352196255]
 transform = Transform3D(1, 0, 0, 0, 0.92521, 0.379456, 0, -0.379456, 0.92521, 0, 1.14255, 1.98567)
 current = true
 script = ExtResource("2_8ccd7")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Camera3D"]
+[node name="OmniLight3D" type="OmniLight3D" parent="Camera3D" unique_id=1211502379]
 light_size = 1.0
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
+[node name="RiggedFigure" parent="." unique_id=297680877 instance=ExtResource("3_r3fl7")]
 
-[node name="RiggedFigure" parent="." instance=ExtResource("3_m8x7j")]
-
-[node name="untitled" parent="." instance=ExtResource("4_mr13d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06765, 0, 0)
-
-[node name="RiggedFigure2" parent="." instance=ExtResource("5_jka67")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.37688, 0, 0)
-
-[node name="qbo" parent="." instance=ExtResource("6_i5arm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.96, 0, 0)
+[node name="qbo" parent="." unique_id=2015270052 instance=ExtResource("4_jka67")]
