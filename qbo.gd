@@ -12,6 +12,9 @@ func find(parent: Node, type):
 
 func _ready():
 	var player: AnimationPlayer = find(self, AnimationPlayer)
+	if not player:
+		print("lmao "+str(self))
+		return
 	var animations = player.get_animation_list()
 	for animation in animations:
 		player.get_animation(animation).loop_mode = Animation.LOOP_PINGPONG
